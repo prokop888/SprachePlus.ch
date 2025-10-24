@@ -1,13 +1,13 @@
 :root {
-  --bg: #f7f8fa;
-  --card-bg: #ffffff;
-  --text: #111315;
-  --muted: #5b6166;
-  --primary: #2563eb;
-  --primary-contrast: #ffffff;
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --primary: #14b8a6;
+  --primary-contrast: #0f172a;
   --whatsapp: #16a34a;
   --radius: 18px;
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
   --gap: 16px;
   --maxw: 1100px;
 }
@@ -49,9 +49,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(15, 23, 42, 0.75);
   backdrop-filter: saturate(1.2) blur(8px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header-inner {
@@ -102,7 +102,7 @@ img {
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background: rgba(37, 99, 235, 0.08);
+  background: rgba(20, 184, 166, 0.12);
   outline: none;
 }
 
@@ -142,10 +142,10 @@ img {
 }
 
 .btn-outline {
-  --btn-bg: #ffffff;
-  --btn-fg: var(--text);
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  --btn-bg: transparent;
+  --btn-fg: var(--primary);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .btn-whatsapp {
@@ -224,10 +224,12 @@ img {
 /* Sections */
 .section {
   padding: 64px 0;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
 }
 
 .section-alt {
-  background: #ffffff;
+  background: var(--card-bg);
 }
 
 h2 {
@@ -261,7 +263,7 @@ h3 {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .card img {
@@ -293,7 +295,7 @@ h3 {
 }
 
 .price-card.featured {
-  outline: 2px solid rgba(37, 99, 235, 0.18);
+  outline: 2px solid rgba(20, 184, 166, 0.28);
 }
 
 /* Verfügbarkeit */
@@ -315,11 +317,11 @@ h3 {
 
 /* FAQ */
 .faq details {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.08);
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius);
   padding: 12px 14px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
 }
 
 .faq details + details {
@@ -366,7 +368,7 @@ h3 {
 .contact-list a {
   color: var(--text);
   text-decoration: none;
-  border-bottom: 1px dashed rgba(0,0,0,0.2);
+  border-bottom: 1px dashed rgba(255,255,255,0.25);
 }
 
 .contact-list a:hover,
@@ -380,8 +382,8 @@ h3 {
   height: 200px;
   border-radius: 14px;
   overflow: hidden;
-  background: #eef2f7;
-  border: 1px solid rgba(0,0,0,0.08);
+  background: #0b1220;
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
 .map-placeholder iframe {
@@ -404,8 +406,8 @@ h3 {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid rgba(0,0,0,0.06);
-  background: #fff;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: var(--card-bg);
 }
 
 .footer-inner {
